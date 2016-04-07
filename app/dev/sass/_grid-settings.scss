@@ -1,0 +1,50 @@
+@import "neat-helpers";
+
+// Adding a Visual Grid while you develop. Set to 'true.'
+$visual-grid: false;
+$visual-grid-color: #000;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.2;
+
+// Change the grid settings
+$column: 90px;
+$gutter: 30px;
+$grid-columns: 12;
+$max-width: 1170px;
+
+// Screen Sizes max widths
+$xsmall: 480px;
+$small: 640px;
+$mini: 800px;
+$medium: 1024px;
+$large: 1440px;
+$xlarge: 1920px;
+
+//  < 480px
+$xs-down: new-breakpoint(max-width $xsmall, 4);
+
+// 481px - 640px
+$s-down: new-breakpoint(max-width $small, 12); 
+$s-up: new-breakpoint(min-width $xsmall + 1, 12); 
+$s-only: new-breakpoint(min-width $xsmall + 1 max-width $small, 12);
+
+// 641px - 800px
+$mini-down: new-breakpoint(max-width $mini, 8);
+$mini-up: new-breakpoint(min-width $small + 1, 12);
+$mini-only: new-breakpoint(min-width $small + 1 max-width $mini, 8);
+
+// 801px - 1024px
+$med-down: new-breakpoint(max-width $medium, 12);
+$med-up: new-breakpoint(min-width $mini + 1, 12);
+$med-only: new-breakpoint(min-width $mini + 1 max-width $medium, 12);
+
+// 1025px - 1440px 
+$lg-down: new-breakpoint(max-width $large, 12);
+$lg-up: new-breakpoint(min-width $medium + 1, 12); 
+$lg-only: new-breakpoint(min-width $medium + 1 max-width $large, 12); 
+
+// > 1440px
+$xlg-up: new-breakpoint(min-width $large + 1, 12); 
+
+
+
