@@ -23,7 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Bourbon & Neat
+# Neat
 # Variables
 # Mixins
 # Normalize
@@ -49,7 +49,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Bourbon & Neat
 --------------------------------------------------------------*/
-@import "bourbon"; // or "bourbon" when in Rails
 @import "grid-settings";
 @import "neat"; // or "neat" when in Rails
 

@@ -8,7 +8,6 @@ var autoprefixer    = require('gulp-autoprefixer');
 var gp_concat       = require('gulp-concat');
 var gp_rename       = require('gulp-rename');
 var gp_uglify       = require('gulp-uglify');
-var bourbon         = require('bourbon').includePaths;
 var neat            = require('bourbon-neat').includePaths;
 
 gulp.task('serve', ['sass'], function() {
@@ -26,7 +25,7 @@ gulp.task('sass', function() {
     return gulp.src("dev/sass/*.scss")
         .pipe(sourcemaps.init())
         .pipe(sass({
-            includePaths: [].concat(bourbon, neat),
+            includePaths: [].concat(neat),
             errLogToConsole: true,
             outputStyle: 'expanded' // Options: nested, expanded, compact, compressed
         }))
